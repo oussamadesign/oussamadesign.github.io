@@ -1057,33 +1057,13 @@ button.subscribe-btn{
 /*******************************************************
 ********************* CONTACT
 *******************************************************/
-.contact-form input{
-	color: #aaa;
-	height: 60px;
-	margin-bottom: 30px;
+.contact{
+	text-align: center;
 }
-.contact-form textarea{
-	margin-bottom: 30px;
-}
-.contact-form input:focus,
-.contact-form textarea:focus{
-	border-color: #2855EA;
-}
-.contact-form input::-webkit-input-placeholder,
-.contact-form textarea::-moz-placeholder { /* Chrome/Opera/Safari */
-  color: #aaa;
-}
-.contact-form input::-moz-placeholder,
-.contact-form textarea::-moz-placeholder { /* Firefox 19+ */
-  color: #aaa;
-}
-.contact-form input:-ms-input-placeholder,
-.contact-form textarea::-moz-placeholder { /* IE 10+ */
-  color: #aaa;
-}
-.contact-form input:-moz-placeholder,
-.contact-form textarea::-moz-placeholder { /* Firefox 18- */
-  color: #aaa;
+.contact ul{
+	width: 100%;
+	font-size: 2em;
+	font-weight: bold;
 }
 /*******************************************************
 ********************* FOOTER
