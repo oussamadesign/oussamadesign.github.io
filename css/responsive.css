@@ -1,96 +1,101 @@
 @media only screen and (max-width : 1024px) {
-	body,
-	html{
-		overflow-x: hidden;
-	}
-	.x-large-title{
-		font-size: 3em;
-	}
-	.intro-title{
-		font-size: 3em;
-	}
-	.language{
-		display: none !important;
-	}
-	.quote-box-content{
-		font-size: 2em;
-	}
-	/* ***** HEADER ***** */
-	header{
-		position: relative;
-	}
-	.primary-nav{
-		height: auto;
-	}
-	.primary-nav .m-mhw{
-		height: auto;
-		padding-top: 120px;
-		margin-bottom: 30px;
-	}
-	.primary-nav ul.menu li{
-		height: auto;
-		line-height: 1;
-		margin: 30px 0; 
-	}
-	.primary-nav ul.menu li a{
-		font-size: 1.2em;
-	}
-	.resp-language{
-		display: block;
-	}
-	.intro-title{
-		font-size: 2em;
-	}
-	.intro-title h1{
-		font-size: inherit;
-	}
-	.intro-title p{
-		font-size: 0.9em;
-	}
 
 }
 /* Smartphones */
 @media only screen and (max-width : 768px) {
-	ul.links{
-		display: none;
+	.folio-container,
+	.larger-container{
+		width: 100%;
+		padding: 0 20px;
+		box-sizing: border-box;
 	}
-	.nav-right{
-		display: none;
+	/*********
+	*** SKILLS
+	*********/
+	.skills{
+		flex-wrap: wrap;
 	}
-	.x-large-title{
-		font-size: 2em;
+	.skill{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 30px;
 	}
-	.team-member{
-		width: 46%;
-		margin: 20px 2%;
-	}
-	.featured-article-box .m-mhw-m{
+	.skill img{
+		width: 100%;
 		height: auto;
 	}
-	.language{
-		display: none !important;
+	/*********
+	*** PORTFOLIO
+	*********/
+	.p-item-track{
+		padding: 0 20px;
+		display: block;
+	}
+	.p-item{
+		width: 340px;
+		height: 340px;
+		transform: rotate(0deg);
+		box-sizing: border-box;
+		margin-bottom: 20px;
+	}
+	.p-item img{
+		width: 50%;
+		height: auto;
+		margin: 0 auto;
+	}
+	/*********
+	*** PARTNERS
+	*********/
+	.partners{
+		width: 100%;
+	}
+	.partner{
+		width: 33%;
+	}
+	/*********
+	*** COLORS
+	*********/
+	.color-container{
+		flex-wrap: wrap;
+	}
+	.color-box{
+		width: 46%;
+		margin-bottom: 30px;
+		
+	}
+	.color{
+		height: 200px;
 	}
 }
 /* Smartphones */
 @media only screen and (max-width : 480px) {
-	.service-box-img{
-		height: 300px;
+	
+	/*********
+	*** HEADER & NAV
+	*********/
+	nav.navigation{
+		width: 90%;
 	}
-	.section-title h1{
-		font-size: 2em;
+	nav.navigation li a{
+		font-size: 3em;
 	}
-	input.subscribe-input{
+
+	/*********
+	*** INTRO
+	*********/
+	.intro{
+		padding-top: 180px;
+	}
+	.intro-container{
+		flex-wrap: wrap-reverse;
+	}
+	.intro-container img{
 		width: 100%;
-		margin-bottom: 20px;
 	}
-	button.subscribe-btn{
+	.intro-container h1{
 		width: 100%;
+		font-size: 3em;
+		margin-bottom: 40px;
 	}
-	section.services{
-		padding: 20px 0;
-	}
-	.partners-list .partner{
-		width: 46%;
-		margin: 30px 2%;
-	}
+
 }
