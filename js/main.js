@@ -28,6 +28,7 @@ jQuery.fn.toggle = function( fn, fn2 ) {
   var btnTop = $('.back-top');
   
   $(document).ready(function() {
+    $('.loading-wrap').fadeOut(2000);
     $(".full-height").height($(window).height());
   
     // MENU TRIGGER -----------------------
