@@ -597,7 +597,7 @@ footer.thank-you{
 ********************* LOADING
 *******************************************************/
 .loading-wrap{
-	background: url(../images/bg/loading-bg.jpg) no-repeat;
+	background: #111 url(../images/bg/loading-bg.jpg) no-repeat;
 	background-size: cover;
 	width: 100%;
 	height: 100%;
