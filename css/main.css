@@ -594,6 +594,66 @@ footer.thank-you{
 	height: 500px;
 }
 /*******************************************************
+********************* CONTACT ME
+*******************************************************/
+.contact-me{
+	position: relative;
+	overflow: hidden;
+}
+.movin-text{
+	font-size: 6em;
+	font-weight: bold;
+}
+.movin-text div{
+	display: flex;
+}
+.circle{
+	width:  600px;
+	height: 600px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.cloudz,
+.handz{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.me{
+	width: 30%;
+	height: auto;
+	position: relative;
+	z-index: 1000;
+}
+.movin-text-item:nth-child(1){
+	opacity: 70%;
+}
+.movin-text-item:nth-child(2){
+	opacity: 60%;
+}
+.movin-text-item:nth-child(3){
+	opacity: 50%;
+}
+.movin-text-item:nth-child(4){
+	opacity: 40%;
+}
+.movin-text-item:nth-child(5){
+	opacity: 30%;
+}
+.movin-text-item:nth-child(6){
+	opacity: 20%;
+}
+.movin-text-item:nth-child(7){
+	opacity: 10%;
+}
+/*******************************************************
 ********************* LOADING
 *******************************************************/
 .loading-wrap{
