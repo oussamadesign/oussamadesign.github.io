@@ -219,6 +219,9 @@ img.scale{
 	color: #000;
 	margin-bottom: 40px;
 }
+ul.med-list{
+	list-style: circle;
+}
 /*******************************************************
 ********************* 5.THE HEADER & NAV
 *******************************************************/
@@ -303,8 +306,7 @@ nav.navigation .social a{
 	background-size: cover;
 }
 .intro-container{
-	width: 90%;
-	height: 700px;
+	width: 80%;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
@@ -315,7 +317,7 @@ nav.navigation .social a{
 	height: auto;
 }
 .intro-title{
-	font-size: 8em;
+	font-size: 7em;
 	color: #111;
 	line-height: 1;
 	text-align: left;
@@ -412,6 +414,14 @@ nav.navigation .social a{
 	width: 100%;
 	overflow-x: hidden;
 }
+.portfolio-container{
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
 .p-item-track{
 	padding: 0 50px;
 	display: flex;
@@ -425,27 +435,36 @@ nav.navigation .social a{
 .p-cloud img{
 	height:500px;
 }
+/*
 .p-item-track:nth-child(2){
 	justify-content: center;
 }
 .p-item-track:nth-child(3){
 	justify-content: flex-end;
-}
+}*/
 .p-item{
-	width: 380px;
-	height: 380px;
+	width:  280px;
+	height: 280px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: 30px solid #fff;
-	transform: rotate(-10deg);
+	border: 5px solid #fff;
+	/*transform: rotate(-10deg);*/
+}
+.problem{
+	background: #000;
+	color: #fff;
+	border-radius: 10px;
+	width: 100%;
+	padding: 30px;
+	display: block;
+	font-size: 2em;
+	margin: 40px 0;
 }
 /*******************************************************
 ********************* PARTNERS
 *******************************************************/
-.our-partners h1{
-	font-size: 4em;
-	text-transform: uppercase;
+.our-partners h2{
 	text-align: center;
 	margin-bottom: 100px;
 }
@@ -485,6 +504,10 @@ nav.navigation .social a{
 }
 .eju{
 	background: url(../images/eju/cover.png) bottom;
+	background-size: cover;
+}
+.eju{
+	background: url(../images/bg/intro-clouds.png) bottom;
 	background-size: cover;
 }
 /*******************************************************
@@ -597,7 +620,7 @@ footer.thank-you{
 ********************* ABOUT ME
 *******************************************************/
 .about-me p{
-	font-size: 2em;
+	font-size: 1.7em;
 }
 /*******************************************************
 ********************* CONTACT ME
@@ -606,58 +629,39 @@ footer.thank-you{
 	position: relative;
 	overflow: hidden;
 }
-.movin-text{
-	font-size: 6em;
-	font-weight: bold;
+.contact-container{
+	width: 300px;
+	margin: 0 auto;
 }
-.movin-text div{
-	display: flex;
+.contact-container img{
+	width: 140px;
+	height: auto;
+	margin: 0 auto 30px auto;
 }
-.circle{
-	width:  600px;
-	height: 600px;
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	z-index: 1000;
+.contact-info{
+	width: 100%;
+	text-align: center;
+}
+.contact-info div{
+	font-size: 1.2em;
+	margin-bottom: 20px;
+}
+.contact-info .info{
+	background: #fff;
+	color: #222;
+	font-weight: 600;
+	padding: 10px 16px;
+	border-radius: 3px;
+	display: block;
+	z-index: 200;
+	
+}
+.contact-info .social{
 	display: flex;
-	align-items: center;
 	justify-content: center;
 }
-.cloudz,
-.handz{
-	width: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-.me{
-	width: 30%;
-	height: auto;
-	position: relative;
-	z-index: 1000;
-}
-.movin-text-item:nth-child(1){
-	opacity: 70%;
-}
-.movin-text-item:nth-child(2){
-	opacity: 60%;
-}
-.movin-text-item:nth-child(3){
-	opacity: 50%;
-}
-.movin-text-item:nth-child(4){
-	opacity: 40%;
-}
-.movin-text-item:nth-child(5){
-	opacity: 30%;
-}
-.movin-text-item:nth-child(6){
-	opacity: 20%;
-}
-.movin-text-item:nth-child(7){
-	opacity: 10%;
+.contact-info .social img{
+	width: 32px;
 }
 /*******************************************************
 ********************* LOADING
