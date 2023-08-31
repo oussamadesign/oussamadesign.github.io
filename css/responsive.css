@@ -27,21 +27,17 @@
 	/*********
 	*** PORTFOLIO
 	*********/
-	.p-item-track{
-		padding: 0 20px;
-		display: block;
+	.portfolio .portfolio-container{
+		flex-direction: column;
 	}
-	.p-item{
-		width: 340px;
-		height: 340px;
-		transform: rotate(0deg);
-		box-sizing: border-box;
-		margin-bottom: 20px;
-	}
-	.p-item img{
-		width: 50%;
+	.portfolio-item{
+		width: 100%;
 		height: auto;
-		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	.portfolio-item img{
+		width: 100%;
+		height: auto;
 	}
 	/*********
 	*** PARTNERS
