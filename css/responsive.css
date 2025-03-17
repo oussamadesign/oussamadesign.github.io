@@ -3,84 +3,57 @@
 }
 /* Smartphones */
 @media only screen and (max-width : 768px) {
+	header{
+		width: 90%;
+	}
+	.navigation{
+		display: none;
+	}
+	section{
+		padding: 70px 0;
+	}
+	.intro{
+		min-height: auto;
+		padding: 140px 20px 0 20px;
+	}
+	.intro-card-header{
+		margin-top: 20px;
+	}
+	.intro-card-body{
+		font-size: .85em;
+	}
 	.folio-container,
 	.larger-container{
 		width: 100%;
 		padding: 0 20px;
 		box-sizing: border-box;
 	}
-	/*********
-	*** SKILLS
-	*********/
-	.skills{
-		flex-wrap: wrap;
-	}
-	.skill{
-		width: 100%;
-		text-align: center;
-		margin-bottom: 30px;
-	}
-	.skill img{
-		width: 100%;
-		height: auto;
-	}
-	/*********
-	*** PORTFOLIO
-	*********/
-	.portfolio .portfolio-container{
+	.case-studies .folio-container.f-row{
 		flex-direction: column;
 	}
-	.portfolio-item{
+	.good-read.f-row{
+		flex-direction: column;
+	}
+	.good-read>div{
+		margin-bottom: 20px;
+	}
+	.good-read .folio-btn{
 		width: 100%;
-		height: auto;
-		margin-bottom: 30px;
+		text-align: center;
 	}
-	.portfolio-item img{
-		width: 100%;
-		height: auto;
+	.contact-title{
+		font-size: 2.9em;
 	}
-	/*********
-	*** PARTNERS
-	*********/
-	.partners{
-		width: 100%;
-	}
-	.partner{
-		width: 33%;
-	}
-	/*********
-	*** COLORS
-	*********/
-	.color-container{
-		flex-wrap: wrap;
-	}
-	.color-box{
-		width: 46%;
-		margin-bottom: 30px;
-		
-	}
-	.color{
-		height: 200px;
-	}
+	
 }
 /* Smartphones */
 @media only screen and (max-width : 480px) {
 	
-	/*********
-	*** HEADER & NAV
-	*********/
-	nav.navigation{
-		width: 90%;
-	}
-	nav.navigation li a{
-		font-size: 3em;
-	}
 
 	/*********
 	*** INTRO
 	*********/
 	.intro{
-		padding-top: 180px;
 	}
 	.intro-container{
 		flex-wrap: wrap-reverse;

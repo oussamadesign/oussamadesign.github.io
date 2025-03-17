@@ -67,9 +67,9 @@ html{
 	width: 100%;
 }
 body{
-	background: #111;
+	background: #000;
 	color: #fff;
-	font-size: 14px;
+	font-size: 16px;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
 	width: 100%;
@@ -81,7 +81,7 @@ body{
 
 }
 a{
-	color: #2855EA;
+	color: #fff;
 	text-decoration: none;
 	-webkit-transition: color 0.4s, background 0.4s;
     -moz-transition:    color 0.4s, background 0.4s;
@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, h6{
 	line-height: 140%;
 	font-weight: bold;
 	letter-spacing: .8px;
-	font-family: 'Poppins', serif;
+	font-family: "Bricolage Grotesque", sans-serif;
 
 }
 h1{
@@ -108,7 +108,7 @@ h2{
 	margin-bottom:20px;
 }
 h3{
-	font-size:1.68em;
+	font-size:1.375em;
 	margin-bottom:20px;
 }
 h4{
@@ -124,7 +124,7 @@ h6{
 	margin-bottom:4px;
 }
 p,span,li{
-	font-size: 1.1em;
+	font-size: 1;
 	line-height: 180%;
 	margin: 0px 0px 20px;
 }
@@ -196,11 +196,8 @@ label{
 	padding: 50px 0;
 }
 .folio-container{
-	width: 960px;
+	width: 1080px;
 	margin: 0 auto;
-}
-.folio-container p{
-	font-size: 1.5em;
 }
 .larger-container{
 	width: 1200px;
@@ -210,93 +207,128 @@ img.scale{
 	width: 100%;
 	height: auto;
 }
-.insight{
-	background: url(../images/bg/intro-clouds.png) no-repeat;
-	background-size: cover;
-	border-radius: 10px;
-	width: 100%;
-	padding: 30px;
-	color: #000;
-	margin-bottom: 40px;
-}
 ul.med-list{
 	list-style: circle;
+}
+.f{
+	display: flex;
+}
+.f-row{
+	flex-direction: row;
+}
+.f-column{
+	flex-direction: column;
+}
+.f-wrap{
+	flex-wrap: wrap;
+}
+.f-between{
+	justify-content: space-between;
+}
+.gap-10{
+	gap: 10px;
+}
+.folio-card{
+	background: rgba(17, 17, 17, 1);
+	border-radius: 20px;
+	border: 1px solid #333;
+	padding: 25px;
+	transition: all .3s ease-out;
+	position: relative;
+	overflow: hidden;
+}
+.folio-card img{
+	transition: all .3s ease-out;
+	border: 1px solid #444;
+	margin-bottom: 20px;
+	border-radius: 20px;
+}
+.folio-card:after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -9999;
+	background: linear-gradient(120deg, rgba(0,0,0,1) 0%, rgba(3,129,158,.4)100%);
+}
+.folio-card:hover{
+	background: rgba(17, 17, 17, 0);
+	border-color: rgba(255, 255, 255, .8);
+}
+.folio-card:hover img{
+	border-color: rgba(255, 255, 255, .8);
+}
+a.folio-btn{
+	background: #000;
+	border: 1px solid #444;
+	border-radius: 12px;
+	color: #fff;
+	display: inline-block;
+	width: auto;
+	height: 44px;
+	line-height: 44px;
+	padding: 0 16px;
+}
+a.folio-btn.color{
+	font-size: 1.2em;
+	border-color: rgba(255, 255, 255, .5);
+	position: relative;
+	overflow: hidden;
+	height: 48px;
+	line-height: 48px;
+	padding: 0 20px;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fff045+0,4ebac2+50,f59e0b+100 */
+	background: linear-gradient(to right,  #fff045 0%,#4ebac2 50%,#f59e0b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background-clip: text;
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	z-index: 1000;
+
 }
 /*******************************************************
 ********************* 5.THE HEADER & NAV
 *******************************************************/
 header {
-	background: transparent;
-	border: none;
+	background: #000;
+	width: 1080px;
+	height: 80px;
+	border-radius: 20px;
+	border: 1px solid #444;
 	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100px;
+	padding: 0 30px;
+	top: 20px;
+	left: 50%;
 	display: flex;
+	transform: translateX(-50%);
 	justify-content: space-between;
 	align-items: center;
 	z-index: 9999;
 }
 h1.logo{
 	background: #000 url(../images/logo.png);
-	width: 64px;
-	height: 64px;
+	width: 164px;
+	height: 48px;
 	background-size: cover;
 	display: block;
 	text-indent: -9999em;
+	margin: 0;
+}
+.navigation {
+	height: 80px;
+	display: flex;
+	align-items: center;
+}
+.navigation ul{
+	display: flex;
+	flex-direction: row;
+
+}
+.navigation ul li{
 	margin: 0 0 0 30px;
-}
-.burger-btn{
-	background: #000;
-	border-radius: 100%;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	width: 64px;
-	height: 64px;
-	margin-right: 30px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.burger-btn img{
-	width: 36px;
-	height: auto;
-}
-nav.navigation{
-	background: url('../images/bg/nav.png') no-repeat;
-	border-radius: 90px 0 0 90px;
-	box-shadow: -1px 2px 64px rgba(0, 0, 0, 0.5);
-	background-size: cover;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 30%;
-	height: 100%;
-	position: absolute;
-	overflow: hidden;
-	top: 0;
-	right: 0;
-	z-index: 100;
-	transform: translateX(120%);
-	transition: all 0.6s ease-in-out;
-}
-nav.navigation li{
-	margin-bottom: 30px;
-}
-nav.navigation li a{
-	color: #000;
-	font-size: 3.4em;
-	font-family: 'Poppins', sans-serif;
-	font-weight: 700;
-}
-nav.navigation .social{
-	margin-top: 60px;
-	display: flex;
-}
-nav.navigation .social a{
-	margin-right: 30px;
+	font-size: 1.1em;
+	font-family: "Bricolage Grotesque", sans-serif;
 }
 /*******************************************************
 ********************* INTRO & PAGE TITLE
@@ -304,446 +336,78 @@ nav.navigation .social a{
 .intro{
 	background: url(../images/bg/intro-clouds.png) bottom;
 	background-size: cover;
-}
-.intro-container{
-	width: 80%;
-	margin: 0 auto;
+	border-bottom: 1px solid #444;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	align-items: flex-end;
+	height: 100vh;
+	padding-bottom: 0;
 }
-.intro-container img{
-	width: 30%;
-	height: auto;
-}
-.intro-title{
-	font-size: 7em;
-	color: #111;
-	line-height: 1;
-	text-align: left;
-	width: 60%;
-}
-/*******************************************************
-********************* ABOUT
-*******************************************************/
-.about p{
-}
-.about img{
-	margin: 50px auto;
-}
-.about img.final{
-	width: 70%;
-}
-/*******************************************************
-********************* COLORS
-*******************************************************/
-.color-container{
-	display: flex;
-	justify-content: space-between;
-	margin-top: 100px;
-
-}
-.color-box{
-	width: 22%;
-	text-align: center;
-}
-.color{
-	background-color: #000;
-	width: 100%;
-	height: 350px;
-	margin-bottom: 20px;
-	position: relative;
-}
-.color::before{
-	content: "";
-	width: 100%;
-	height: 40px;
-	position: absolute;
-	top: -40px;
-	left: 0;
-}
-.color.orange{
-	background: #FF570D;
-}
-.color.orange::before{
-	background: url(../images/tt/orange.svg) no-repeat bottom;
-	background-size: 100%;
-}
-.color.yellow{
-	background: #FFF507;
-}
-.color.yellow::before{
-	background: url(../images/tt/yellow.svg) no-repeat bottom;
-	background-size: 100%;
-}
-.color.black{
+.intro-card{
 	background: #000;
-}
-.color.black::before{
-	background: url(../images/tt/black.svg) no-repeat bottom;
-	background-size: 100%;
-}
-.color.dark{
-	background: #222;
-}
-.color.dark::before{
-	background: url(../images/tt/dark.svg) no-repeat bottom;
-	background-size: 100%;
-}
-/*******************************************************
-********************* SKILLS 
-*******************************************************/
-.skills{
-	padding: 120px 0;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-.skill{
-	text-align: center;
-}
-.skill img{
-	width: 330px;
-	margin-bottom: 20px;
-}
-
-/*******************************************************
-********************* FOLIO
-*******************************************************/
-.portfolio{
-	width: 100%;
-	overflow-x: hidden;
-}
-.portfolio-container{
-	width: 80%;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-}
-.p-item-track{
-	padding: 0 50px;
-	display: flex;
-	position: relative;
-}
-.p-cloud{
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-.p-cloud img{
-	height:500px;
-}
-/*
-.p-item-track:nth-child(2){
-	justify-content: center;
-}
-.p-item-track:nth-child(3){
-	justify-content: flex-end;
-}*/
-.p-item{
-	width:  280px;
-	height: 280px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border: 5px solid #fff;
-	/*transform: rotate(-10deg);*/
-}
-.problem{
-	background: #000;
-	color: #fff;
-	border-radius: 10px;
-	width: 100%;
+	border: 1px solid #444;
+	border-bottom: none;
+	border-radius: 20px 20px 0 0;
 	padding: 30px;
-	display: block;
-	font-size: 2em;
-	margin: 40px 0;
+	margin-bottom: -1px;
+}
+.intro-card-header{
+	border-bottom: 1px solid #444;
+	margin-bottom: 20px;
+}
+.intro-card-body p{
+	font-size: 1.3em;
 }
 /*******************************************************
-********************* PARTNERS
+********************* Good reads
 *******************************************************/
-.our-partners h2{
-	text-align: center;
-	margin-bottom: 100px;
-}
-.partners{
-	width: 960px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-	position: relative;
-	flex-wrap: wrap;
-}
-.partner{
-	width: 25%;
-	margin-bottom: 30px;
-}
-.partner img{
-	width: 100%;
-	height: auto;
-}
-/*******************************************************
-********************* PROJECT BANNER
-*******************************************************/
-.project-banner{
-	display: flex;
-	justify-content: center;
+.good-read{
 	align-items: center;
-	height: 500px;
+	padding: 20px 30px;
 }
-.project-logo{
-	width: 300px;
-	height: auto;
-	margin: 0;
+.good-read h3{
+	margin-bottom: 5px;
 }
-.tt{
-	background: url(../images/tt/cover.png) bottom;
-	background-size: cover;
-}
-.eju{
-	background: url(../images/eju/cover.png) bottom;
-	background-size: cover;
-}
-.eju{
-	background: url(../images/bg/intro-clouds.png) bottom;
-	background-size: cover;
+.good-read p{
+	margin-bottom: 0;
 }
 /*******************************************************
-********************* PROJECT DETAILS
-*******************************************************/
-.project-details dl{
-	border-bottom: 1px solid #fff;
-	width: 100%;
-	padding: 20px 0;
-	line-height: 160%;
-	display: flex;
-}
-.project-details dt{
-	margin-right: 30px;
-	width: 25%;
-	font-weight: bold;
-}
-/*******************************************************
-********************* UI
-*******************************************************/
-.ui-screens img{
-	margin-bottom: 30px;
-}
-/*******************************************************
-********************* VIDEO
-*******************************************************/
-.video-container{
-	background: #FF570D;
-	padding: 40px;
-	width: 80%;
-	margin: 0 auto;
-	position: relative;
-}
-.video-container video{
-	width: 100%;
-	height: auto;
-}
-.video-container::before{
-	content: "";
-	background: url(../images/tt/orange-long-u.svg) bottom no-repeat;
-	background-size: 100%;
-	width: 100%;
-	height: 60px;
-	position: absolute;
-	top: -59px;
-	left: 0;
-}
-.video-container::after{
-	content: "";
-	background: url(../images/tt/orange-long-d.svg) top no-repeat;
-	background-size: 100%;
-	width: 100%;
-	height: 60px;
-	position: absolute;
-	bottom: -59px;
-	left: 0;
-}
-/*******************************************************
-********************* FOOTER
-*******************************************************/
-.footer{
-	background: url(../images/bg/cloud2.png) top;
-	background-size: cover;
-	padding-top: 120px;
-}
-.footer h2{
-	margin-bottom: 80px;
-}
-.footer .email{
-	width: 100%;
-	height: auto;
-	margin: 0;
-}
-footer.thank-you{
-	width: 100%;
-	margin-top: 200px;
-	overflow: hidden;
-	background: url(../images/tt/city.png) no-repeat bottom;
-	background-size: cover;
-	position: relative;
-}
-.thank-you-box{
-	border: 20px solid #fff;
-	display: flex;
-	width: 300px;
-	height: 300px;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
-}
-.thank-you-box h3{
-	font-size: 2.8em;
-	line-height: 110%;
-	text-transform: uppercase;
-}
-.go-back{
-	width: 100%;
-}
-.cloud-footer{
-
-
-}
-.cloud-footer img{
-	height: 500px;
-}
-/*******************************************************
-********************* ABOUT ME
-*******************************************************/
-.about-me p{
-	font-size: 1.7em;
-}
-/*******************************************************
-********************* CONTACT ME
+********************* FOOTER CONTACT ME
 *******************************************************/
 .contact-me{
-	position: relative;
-	overflow: hidden;
-}
-.contact-container{
-	width: 300px;
-	margin: 0 auto;
-}
-.contact-container img{
-	width: 140px;
-	height: auto;
-	margin: 0 auto 30px auto;
-}
-.contact-info{
-	width: 100%;
+	background: url('../images/bg/footer.png') top;
+	background-size: cover;
+	display: flex;
+	align-items: flex-end;
+	min-height: 100vh;
+	padding-bottom: 0;
+	justify-content: center;
 	text-align: center;
 }
-.contact-info div{
-	font-size: 1.2em;
-	margin-bottom: 20px;
+.contact-title{
+	font-size: 3.6em;
+	line-height: 100%;
 }
-.contact-info .info{
-	background: #fff;
-	color: #222;
-	font-weight: 600;
-	padding: 10px 16px;
-	border-radius: 3px;
-	display: block;
-	z-index: 200;
-	
+.contact-info-box{
+	background: #000;
+	border-radius: 200px 200px 0 0;
+	border: 1px solid #fff;
+	border-bottom: none;
+	width:  360px;
+	height: 440px;
+	position: relative;
+	padding: 30px 30px 0 30px;
+	margin: 20px auto 0 auto;
 }
-.contact-info .social{
-	display: flex;
-	justify-content: center;
-}
-.contact-info .social img{
-	width: 32px;
-}
-/*******************************************************
-********************* LOADING
-*******************************************************/
-.loading-wrap{
-	background: #111 url(../images/bg/loading-bg.jpg) no-repeat;
+.box-before{
+	position: relative;
+	background: url(../images/contact.png) top;
 	background-size: cover;
+	border: 1px solid #fff;
+	border-bottom: 0;
+	border-radius: 200px 200px 0 0;
 	width: 100%;
 	height: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 9999;
 }
-.loading-wrap h3{
-	width: 100%;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	margin: 0;
-	text-align: center;
-	letter-spacing: 3px;
-}
-.loading-clouds,
-.hands{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	transform-origin: center center;
-}
-@-webkit-keyframes rotating /* Safari and Chrome */ {
-from {
-	-webkit-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
-	transform: rotate(0deg);
-	transform-origin: center center;
-
-}
-to {
-	-webkit-transform: rotate(360deg);
-	-o-transform: rotate(360deg);
-	transform: rotate(360deg);
-	transform-origin: center center;
-
-}
-}
-@keyframes rotating {
-from {
-	-ms-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-webkit-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
-	transform: rotate(0deg);
-	transform-origin: center center;
-
-}
-to {
-	-ms-transform: rotate(360deg);
-	-moz-transform: rotate(360deg);
-	-webkit-transform: rotate(360deg);
-	-o-transform: rotate(360deg);
-	transform: rotate(360deg);
-	transform-origin: center center;
-
-}
-}
-@keyframes fading {
-from {
-	opacity: 0;
-}
-to {
-	opacity: 1;
-}
-}
-.rotating {
-	-webkit-animation: rotating 4s linear infinite;
-	-moz-animation: rotating 4s linear infinite;
-	-ms-animation: rotating 4s linear infinite;
-	-o-animation: rotating 4s linear infinite;
-	animation: rotating 4s linear infinite;
-}
-.fading{
-	animation: fading 1s linear infinite;
+.box-after{
+	display: none;
 }
