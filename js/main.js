@@ -42,3 +42,16 @@ jQuery.fn.toggle = function( fn, fn2 ) {
         $(".burger-icon").attr('src','images/media/burger.png');
     });
   });
+
+// Contact info box flip effect
+document.addEventListener('DOMContentLoaded', function() {
+  const contactBtn = document.querySelector('.contact-me-btn');
+  const contactInfoBox = document.querySelector('.contact-info-box');
+  
+  if (contactBtn && contactInfoBox) {
+    contactBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      contactInfoBox.classList.toggle('flipped');
+    });
+  }
+});
