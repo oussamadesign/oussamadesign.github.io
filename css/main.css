@@ -361,6 +361,18 @@ h1.logo{
 .intro-card-header{
 	border-bottom: 1px solid #444;
 	margin-bottom: 20px;
+	align-items: center;
+	padding-bottom: 20px;
+}
+.intro-card-header img{
+	border-radius: 100%;
+	width: 60px;
+	height: 60px;
+	margin-right: 10px;
+	margin-bottom: 0;
+}
+.intro-card-header h3{
+	margin: 0;
 }
 .intro-card-body p{
 	font-size: 1.3em;
