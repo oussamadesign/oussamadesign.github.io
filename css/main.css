@@ -89,7 +89,7 @@ a{
     transition:         color 0.4s, background 0.4s;
 }
 a:hover{
-	color: #222;
+	color: #eee;
 	text-decoration: none;
 }
 h1, h2, h3, h4, h5, h6{
@@ -246,19 +246,21 @@ ul.med-list{
 .folio-card:after{
 	content: "";
 	position: absolute;
+	opacity: .3;
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
 	z-index: -9999;
-	background: linear-gradient(120deg, rgba(0,0,0,1) 0%, rgba(3,129,158,.4)100%);
+	background: linear-gradient(-120deg,  #fff045 0%,#4ebac2 50%,#f59e0b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
 }
 .folio-card:hover{
 	background: rgba(17, 17, 17, 0);
-	border-color: rgba(255, 255, 255, .8);
+	border-color: rgba(255, 255, 255, .5);
 }
 .folio-card:hover img{
-	border-color: rgba(255, 255, 255, .8);
+	border-color: rgba(255, 255, 255, .5);
 }
 a.folio-btn{
 	background: #000;
@@ -283,7 +285,8 @@ a.folio-btn.color{
 	line-height: 52px;
 	padding: 0 26px;
 }
-a.folio-btn.color span{
+a.folio-btn.color span,
+.gradient-text{
 	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fff045+0,4ebac2+50,f59e0b+100 */
 	background: linear-gradient(to right,  #fff045 0%,#4ebac2 50%,#f59e0b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	background-clip: text;
@@ -299,7 +302,7 @@ header {
 	height: 80px;
 	border-radius: 20px;
 	border: 1px solid #444;
-	position: absolute;
+	position: fixed;
 	padding: 0 30px;
 	top: 20px;
 	left: 50%;
@@ -309,8 +312,9 @@ header {
 	align-items: center;
 	z-index: 9999;
 }
+
 h1.logo{
-	background: #000 url(../images/logo.png);
+	background: transparent url(../images/logo.png);
 	width: 164px;
 	height: 48px;
 	background-size: cover;
@@ -331,6 +335,7 @@ h1.logo{
 .navigation ul li{
 	margin: 0 0 0 30px;
 	font-size: 1.1em;
+	font-weight: 600;
 	font-family: "Bricolage Grotesque", sans-serif;
 }
 /*******************************************************
