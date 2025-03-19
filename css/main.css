@@ -228,7 +228,7 @@ ul.med-list{
 .gap-10{
 	gap: 10px;
 }
-.folio-card{
+.folio-card {
 	background: rgba(17, 17, 17, 1);
 	border-radius: 20px;
 	border: 1px solid #333;
@@ -236,6 +236,11 @@ ul.med-list{
 	transition: all .3s ease-out;
 	position: relative;
 	overflow: hidden;
+	transform: translateY(20px);
+}
+.folio-card.fade-in {
+	opacity: 1;
+	transform: translateY(0);
 }
 .folio-card img{
 	transition: all .3s ease-out;
@@ -245,8 +250,9 @@ ul.med-list{
 }
 .folio-card:after{
 	content: "";
+	transition: all .3s ease-out;
 	position: absolute;
-	opacity: .3;
+	opacity: 0;
 	width: 100%;
 	height: 100%;
 	top: 0;
@@ -258,6 +264,9 @@ ul.med-list{
 .folio-card:hover{
 	background: rgba(17, 17, 17, 0);
 	border-color: rgba(255, 255, 255, .5);
+}
+.folio-card:hover:after{
+	opacity: .2;
 }
 .folio-card:hover img{
 	border-color: rgba(255, 255, 255, .5);
@@ -342,13 +351,14 @@ h1.logo{
 ********************* INTRO & PAGE TITLE
 *******************************************************/
 .intro{
-	background: url(../images/bg/intro-clouds.png) bottom;
+	background: url(../images/bg/intro-clouds.jpg) top no-repeat;
 	background-size: cover;
 	border-bottom: 1px solid #444;
 	display: flex;
 	align-items: flex-end;
 	height: 100vh;
 	padding-bottom: 0;
+	position: relative;
 }
 .intro-card{
 	background: #000;
@@ -356,7 +366,9 @@ h1.logo{
 	border-bottom: none;
 	border-radius: 20px 20px 0 0;
 	padding: 30px;
-	margin-bottom: -1px;
+	margin-bottom: -2px;
+	position: relative;
+	z-index: 1000;
 }
 .intro-card-header{
 	border-bottom: 1px solid #444;
@@ -394,7 +406,7 @@ h1.logo{
 ********************* FOOTER CONTACT ME
 *******************************************************/
 .contact-me{
-	background: url('../images/bg/footer.png') top;
+	background: url('../images/bg/footer.png') no-repeat bottom;
 	background-size: cover;
 	display: flex;
 	align-items: flex-end;
@@ -402,6 +414,8 @@ h1.logo{
 	padding-bottom: 0;
 	justify-content: center;
 	text-align: center;
+	position: relative;
+	overflow: hidden;
 }
 .contact-title{
 	font-size: 3.6em;

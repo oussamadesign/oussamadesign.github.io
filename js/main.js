@@ -55,3 +55,74 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+// Fade in animation for folio cards
+const folioCards = document.querySelectorAll('.folio-card');
+
+const animateCard = (card) => {
+    const duration = 1000; // Animation duration in ms (1 second)
+    const startTime = performance.now();
+    const startOpacity = 0;
+    const endOpacity = 1;
+    const startY = 20;
+    const endY = 0;
+
+    const animate = (currentTime) => {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+
+        // Easing function (ease-out)
+        const easeOut = t => 1 - Math.pow(1 - t, 2);
+        const easedProgress = easeOut(progress);
+
+        // Calculate current values
+        const currentOpacity = startOpacity + (endOpacity - startOpacity) * easedProgress;
+        const currentY = startY + (endY - startY) * easedProgress;
+
+        // Apply the animation
+        card.style.opacity = currentOpacity;
+        card.style.transform = `translateY(${currentY}px)`;
+
+        // Continue animation if not finished
+        if (progress < 1) {
+            requestAnimationFrame(animate);
+        }
+    };
+
+    requestAnimationFrame(animate);
+};
+
+const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Add 200ms delay before starting the animation
+            setTimeout(() => {
+                animateCard(entry.target);
+            }, 200);
+            observer.unobserve(entry.target); // Stop observing once the card is visible
+        }
+    });
+}, observerOptions);
+
+folioCards.forEach(card => {
+    observer.observe(card);
+});
+
+// Parallax effect for intro section and footer
+const introSection = document.querySelector('.intro');
+const footerSection = document.querySelector('.contact-me');
+
+if (introSection) {
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const speed = 0.4; // Adjust this value to control parallax speed
+        const yPos = -(scrolled * speed);
+        introSection.style.backgroundPosition = `center ${yPos}px`;
+    });
+}
