@@ -306,7 +306,8 @@ a.folio-btn.color span,
 ********************* 5.THE HEADER & NAV
 *******************************************************/
 header {
-	background: #000;
+	background: rgba(0, 0, 0, 0.4);
+	backdrop-filter: blur(10px);
 	width: 1080px;
 	height: 80px;
 	border-radius: 20px;
