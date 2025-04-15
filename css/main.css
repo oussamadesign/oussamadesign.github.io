@@ -484,3 +484,11 @@ h1.logo{
   position: relative;
   margin-bottom: 2rem;
 }
+/*******************************************************
+********************* Onclusive
+*******************************************************/
+.onclusive-aside{
+	width: 300px;
+	height: auto;
+	position: relative;
+}
