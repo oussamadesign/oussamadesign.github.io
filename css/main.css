@@ -190,6 +190,11 @@ label{
 	height: 0;
 	padding: 30px 0;
 }
+.spacer-lg{
+	width: 100%;
+	height: 0;
+	padding: 120px 0;
+}
 .spacer-double{
 	width: 100%;
 	height: 0;
@@ -197,6 +202,10 @@ label{
 }
 .folio-container{
 	width: 1080px;
+	margin: 0 auto;
+}
+.folio-container-article{
+	width: 760px;
 	margin: 0 auto;
 }
 .larger-container{
@@ -301,6 +310,32 @@ a.folio-btn.color span,
 	background-clip: text;
 	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
+}
+img.media {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	background: #444;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.img-desc{
+	color: #888;
+	font-weight: normal;
+	line-height: 140%;
+	font-size: .8em;
+	display: block;
+	margin-bottom: 30px;
+}
+.img-container{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.img-container img{
+	width: 60%;
 }
 /*******************************************************
 ********************* 5.THE HEADER & NAV
@@ -421,6 +456,9 @@ h1.logo{
 .contact-title{
 	font-size: 3.6em;
 	line-height: 100%;
+}
+.contact-info-box {
+	min-width: 380px;
 }
 .contact-info-box {
 	background: #000;
