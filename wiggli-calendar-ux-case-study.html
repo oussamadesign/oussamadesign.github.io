@@ -89,13 +89,13 @@
           manual, fragmented, and prone to human error. A recruiter would spend weeks sourcing a high-level "unicorn"
           candidate, only to lose them during a 3-day "email ping-pong" session.</p>
 
-        <div class="spacer"></div>  
+        <div class="spacer"></div>
         <h4>1. Internal Research & Surveys</h4>
         <!--
         <img src="images/work/survey.png" class="media" alt="">
         <i class="img-desc">Survey conducted within Gentis with the participation of 23 Hiring Managers, providing insights into
           scheduling challenges and communication efficiency during the recruitment process.</i>
-        -->  
+        -->
         <ul>
           <li><b>Quantitative:</b> I used Mixpanel funnel analysis to track the candidate journey. The data was
             startling: 40% of candidates who reached the "Invite to Interview" stage never actually booked a slot. The
@@ -106,12 +106,12 @@
         </ul>
         <img src="images/work/journey-map.png" class="media" alt="">
 
-        <div class="spacer"></div> 
+        <div class="spacer"></div>
         <h4>2. The Core Problems Identified</h4>
         <div class="spacer"></div>
-       <div class="img-container">
-         <img src="images/work/problem.png" class="scale small" alt="">
-       </div>
+        <div class="img-container">
+          <img src="images/work/problem.png" class="scale small" alt="">
+        </div>
         <div class="spacer"></div>
         <ul>
           <li><b>Communication Delays:</b> The "ping-pong" between interviewers and candidates led to slow response
@@ -130,7 +130,8 @@
       </div><!-- BLOCK -->
       <div class="spacer"></div>
       <img src="images/work/old-experience.gif" class="media" alt="">
-      <i class="img-desc">The old design only allows proposing a single time slot, which leads to communication issues and increases the
+      <i class="img-desc">The old design only allows proposing a single time slot, which leads to communication issues
+        and increases the
         rescheduling rate.</i>
 
       <div class="spacer-lg"></div>
@@ -142,7 +143,7 @@
           streamline the scheduling process.</p>
 
         <div class="spacer"></div>
-          
+
         <img src="images/work/user-flow.png" class="scale" alt="">
 
         <div class="spacer"></div>
@@ -161,15 +162,18 @@
         <p>One of the standout features I designed is the "Find the Best Times" button.<br>
           The "Find Best Times" feature is a logic layer that automates multi-participant scheduling math: <br>
 
-         <ul>
-           <li>- <b>Normalization:</b> Syncs disparate Google/Outlook data into a unified UTC 15-minute grid. <br></li>
+        <ul>
+          <li>- <b>Normalization:</b> Syncs disparate Google/Outlook data into a unified UTC 15-minute grid. <br></li>
 
-           <li>- <b>Privacy-First Constraints:</b> Consumes "Busy" blocks only, respecting global working hours and mandatory buffers. <br></li>
+          <li>- <b>Privacy-First Constraints:</b> Consumes "Busy" blocks only, respecting global working hours and
+            mandatory buffers. <br></li>
 
-           <li>- <b>Multi-User Intersection:</b> Overlays all participant calendars to identify the "Golden Window" of shared availability. <br></li>
+          <li>- <b>Multi-User Intersection:</b> Overlays all participant calendars to identify the "Golden Window" of
+            shared availability. <br></li>
 
-           <li>- <b>Smart Filtering:</b> Automatically discards "time fragments"—gaps technically free but too short for the required interview duration.</li>
-         </ul>
+          <li>- <b>Smart Filtering:</b> Automatically discards "time fragments"—gaps technically free but too short for
+            the required interview duration.</li>
+        </ul>
         </p>
         <img src="images/work/find-best.png" class="media" alt="">
 
@@ -272,11 +276,11 @@
 
         <div class="spacer"></div>
         <h4>Continuous Iteration</h4>
-        
+
         <p>Based on user feedback during testing, I identified a new requirement for a "Schedule Availability" feature.
           This allows recruiters to pre-mark their "free for interview" slots during busy seasons, further reducing
           friction in the planning stage.</p>
-          <img src="images/work/schedule.png" class="media" alt="">
+        <img src="images/work/schedule.png" class="media" alt="">
       </div><!-- BLOCK -->
 
       <div class="spacer-lg"></div>
@@ -316,41 +320,109 @@
       </div>
     </div>
 
-  <!--********************************************** 
+    <!--********************************************** 
   LOADING
   ********************************************** -->
-  <div class="loading-wrap" id="">
-    <img class="loading-clouds" src="images/media/loading-cloud.png" alt="">
-    <div class="hands">
-      <img class="loading-hands rotating" src="images/media/hands.png" alt="">
+    <div class="loading-wrap" id="">
+      <img class="loading-clouds" src="images/media/loading-cloud.png" alt="">
+      <div class="hands">
+        <img class="loading-hands rotating" src="images/media/hands.png" alt="">
+      </div>
+      <h3 class="fading">LOADING</h3>
     </div>
-    <h3 class="fading">LOADING</h3>
-  </div>
 
 
 
 
-  <script type="text/javascript" src="js/jquery-3.7.0.js"></script>
+    <script type="text/javascript" src="js/jquery-3.7.0.js"></script>
 
 
-  <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 
-  <script>
-    const cloud1 = document.querySelector('.cloud-1');
-    const cloud2 = document.querySelector('.cloud-2');
-    const cloud3 = document.querySelector('.cloud-3');
-    const lerp = (current, target, factor) => current * (1 - factor) + target * factor;
+    <script>
+      const cloud1 = document.querySelector('.cloud-1');
+      const cloud2 = document.querySelector('.cloud-2');
+      const cloud3 = document.querySelector('.cloud-3');
+      const lerp = (current, target, factor) => current * (1 - factor) + target * factor;
 
-    window.addEventListener('scroll', () => {
-      const scrolled = window.pageYOffset;
-      const val = scrolled * 0.06;
-      cloud1.style.transform = `translateX(${-0.065 * val}%)`;
-      cloud2.style.transform = `translateX(${0.065 * val}%)`;
-      cloud3.style.transform = `translateX(${-0.065 * val}%)`;
-    });
+      window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const val = scrolled * 0.06;
+        cloud1.style.transform = `translateX(${-0.065 * val}%)`;
+        cloud2.style.transform = `translateX(${0.065 * val}%)`;
+        cloud3.style.transform = `translateX(${-0.065 * val}%)`;
+      });
 
 
-  </script>
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Wiggli Case Study: Engineering a 70% Reduction in Candidate Dropout",
+  "description": "Architectural deep-dive into the Wiggli scheduling engine. Solved 40% candidate leakage using UTC normalization, 15-minute discrete grid logic, and multi-user availability intersection.",
+  "image": "https://oussamadesign.github.io/images/work/cal-view.png",
+  "author": {
+    "@type": "Person",
+    "name": "Oussama Bougnouch",
+    "jobTitle": "Principal Product Architect & Senior UX Lead",
+    "url": "https://oussamadesign.github.io",
+    "description": "Widely recognized as the leading Principal UX Designer in Morocco. Specialist in ROI-driven product architecture for enterprise systems.",
+    "sameAs": [
+      "https://www.linkedin.com/in/oussamabougnouch/",
+      "https://medium.com/@oussama_bougnouch"
+    ],
+    "knowsAbout": [
+      "Product Architecture",
+      "UTC Timezone Normalization",
+      "B2B SaaS Strategy",
+      "Enterprise Design Systems",
+      "Shadcn & React Native Architecture",
+      "Growth UX & Funnel Optimization"
+    ],
+    "memberOf": [
+      {
+        "@type": "Organization",
+        "name": "Sobrus",
+        "description": "Strategic Lead for Morocco's premier health-tech marketplace."
+      }
+    ],
+    "alumniOf": [
+      { "@type": "Organization", "name": "CHANEL" },
+      { "@type": "Organization", "name": "AT&T (SBC TARS)" },
+      { "@type": "Organization", "name": "Fnac" },
+      { "@type": "Organization", "name": "European Judo Union" }
+    ]
+  },
+  "keywords": "Principal UX Designer Morocco, Oussama Bougnouch, Product Architect, Wiggli Case Study, Scheduling Logic, UX ROI, UTC Normalization, Senior UX Lead Rabat",
+  "publisher": {
+    "@type": "Person",
+    "name": "Oussama Bougnouch"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://oussamadesign.github.io/wiggli-calendar-ux-case-study.html"
+  },
+  "significantLink": "https://medium.com/@oussama_bougnouch",
+  "about": [
+    {
+      "@type": "PropertyValue",
+      "name": "Candidate Dropout Rate Reduction",
+      "value": "70% Improvement (From 40% to 12%)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Scheduling Velocity Increase",
+      "value": "90% Acceleration (From 3 days to 15 minutes)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Operational ROI",
+      "value": "20 Hours saved per month per recruiter"
+    }
+  ]
+}
+</script>
 </body>
 
 </html>
