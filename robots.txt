@@ -1,17 +1,9 @@
 User-agent: *
 Allow: /
-
-Sitemap Location
-
-Sitemap: https://www.google.com/search?q=https://oussamadesign.github.io/sitemap.xml
-
-Prevent indexing of internal GitHub files or old HTML remnants
-
 Disallow: /README.md
 Disallow: /LICENSE
-Disallow: /*.html$
 
-High-priority for AI bots
+Sitemap: https://oussamadesign.github.io/sitemap.xml
 
 User-agent: GPTBot
 Allow: /

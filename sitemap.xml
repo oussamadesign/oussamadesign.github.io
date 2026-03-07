@@ -1,1 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="[suspicious link removed]"><!-- Main Portfolio Index --><url><loc>https://oussamadesign.github.io/</loc><lastmod>2025-03-24</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url><!-- Wiggli Case Study - Clean URL --><url><loc>https://www.google.com/search?q=https://oussamadesign.github.io/wiggli-calendar/</loc><lastmod>2025-03-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url><!-- Add future case studies here as they go live --><!--<url><loc>https://www.google.com/search?q=https://oussamadesign.github.io/european-judo-union/</loc><lastmod>2025-03-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>--></urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Main Portfolio -->
+  <url>
+    <loc>https://oussamadesign.github.io/</loc>
+    <lastmod>2025-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Wiggli Case Study -->
+  <url>
+    <loc>https://oussamadesign.github.io/wiggli-calendar-ux-case-study/</loc>
+    <lastmod>2025-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>
